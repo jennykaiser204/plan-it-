@@ -1,26 +1,17 @@
 package de.htw_berlin.plan_it;
 
-
-import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
-@Entity(name = "Event")
 public class EventEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
     private Long id;
 
     private String title;
     private String module;
     private String professor;
 
-    @Column(name = "start-time")
     private LocalDateTime start;
 
-    @Column(name = "end-time")
     private LocalDateTime end;
 
     private LocalDateTime deadline;

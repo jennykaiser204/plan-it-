@@ -1,7 +1,5 @@
 package de.htw_berlin.plan_it;
 
-import jakarta.persistence.Column;
-
 import java.time.LocalDateTime;
 
 public class EventDTO {
