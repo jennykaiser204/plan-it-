@@ -1,10 +1,18 @@
 <script setup>
+import WeekView from './components/WeekView.vue'
+</script>
+
+<template>
+  <WeekView />
+</template>
+
+<!-- <script setup>
 import DayView from './components/DayView.vue'
 </script>
 
 <template>
   <DayView />
-</template>
+</template> -->
 
 <!-- <script setup>
 import EventList from './components/EventList.vue'

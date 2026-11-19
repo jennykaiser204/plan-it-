@@ -6,7 +6,7 @@
     <nav class="ansicht"> <!-- Tages-, Wochen-, Monatsansicht-->
       <button class="aktiv">Tag</button>
       <button>Woche</button>
-      <button>Monat</button>
+     <!-- <button>Monat</button> -->
     </nav>
 
     <header class="kopfzeile">
@@ -44,6 +44,7 @@
         </div>
 
         <div class="tagesspalte">
+          <div class="stundenzeile"></div>
           <div class="stundenzeile"></div>
           <div class="stundenzeile"></div>
           <div class="stundenzeile"></div>

@@ -1,0 +1,96 @@
+.wochenansicht {
+    display: flex;
+    flex-direction: column;   /* Umschalter, Tageszeile, Raster untereinander */
+    height: 100vh;            /* genau so hoch wie das Browserfenster */
+}
+
+.ansicht {
+    display: flex;
+    width: fit-content;
+    margin: 12px auto;
+    padding: 2px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.ansicht button {
+    padding: 6px 24px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;  /* nicht aktive Buttons: durchsichtig */
+    font-size: 14px;
+    cursor: pointer;          /* Hand-Zeiger beim Drüberfahren */
+}
+
+.ansicht button.aktiv {
+    background: rgb(252 220 230);
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgb(255 255 255);  /* leichter Schatten */
+}
+
+.tag-kopf {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   /* Name und Datum untereinander */
+    align-items: center;      /* beides mittig */
+    padding: 8px 0;
+}
+
+.tag-name {
+    font-weight: 600;
+}
+
+.tag-datum {
+    font-size: 12px;
+    color: var(--text-grau);
+}
+
+.wochenansicht {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.tageszeile {
+    display: flex;
+    border-bottom: 1px solid var(--linie);
+}
+
+.ecke {
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.scrollbereich {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.raster {
+    display: flex;
+}
+
+.zeitspalte {
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.stunde {
+    height: 60px;
+    padding-right: 8px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-grau);
+}
+
+.tagesspalte {
+    flex: 1;
+    position: relative;
+    border-left: 1px solid var(--linie);
+}
+
+.stundenzeile {
+    height: 60px;
+    border-top: 1px solid var(--linie);
+    box-sizing: border-box;
+}
