@@ -13,11 +13,14 @@ const tage = [
 <template>
   <div class="wochenansicht">
 
+    <div class="oberleiste">
     <nav class="ansicht"> <!-- Tages-, Wochen-, Monatsansicht-->
       <button>Tag</button>
       <button class="aktiv">Woche</button>
       <!-- <button>Monat</button> -->
     </nav>
+    <button class="plus-button">+</button>
+    </div>
 
     <div class="tageszeile">
       <div class="ecke"></div>
@@ -27,7 +30,6 @@ const tage = [
       </div>
     </div>
 
-    <!-- Raster -->
     <div class="scrollbereich">
       <div class="raster">
 

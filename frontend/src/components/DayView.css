@@ -1,3 +1,35 @@
+.oberleiste {
+    position: relative;
+}
+
+.plus-button {
+    /* Position: oben rechts in der Oberleiste */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* Form: Viereck mit runden Ecken */
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+
+    /* Das Plus-Zeichen */
+    color: #ffb3ca;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.plus-button:hover {
+    background: #fff0f5;
+}
+
 .tagesansicht {
     display: flex;
     flex-direction: column;   /* Umschalter, Kopfzeile, Raster untereinander */
@@ -6,10 +38,10 @@
 
 .ansicht {
     display: flex;
-    width: fit-content;       /* nur so breit wie die 3 Buttons */
+    width: fit-content;
     margin: 12px auto;        /* "auto" links/rechts = zentriert */
     padding: 2px;
-    background: #ffffff;      /* grauer Hintergrund */
+    background: #ffffff;
     border-radius: 8px;
 }
 

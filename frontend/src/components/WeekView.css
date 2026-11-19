@@ -1,3 +1,35 @@
+.oberleiste {
+    position: relative;
+}
+
+.plus-button {
+    /* Position: oben rechts in der Oberleiste */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* Form: Viereck mit runden Ecken */
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+
+    /* Das Plus-Zeichen */
+    color: #ffb3ca;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.plus-button:hover {
+    background: #fff0f5;
+}
+
 .wochenansicht {
     display: flex;
     flex-direction: column;   /* Umschalter, Tageszeile, Raster untereinander */
@@ -43,12 +75,6 @@
 .tag-datum {
     font-size: 12px;
     color: var(--text-grau);
-}
-
-.wochenansicht {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 .tageszeile {

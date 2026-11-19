@@ -3,11 +3,14 @@
 <template>
   <div class="tagesansicht">
 
+    <div class="oberleiste">
     <nav class="ansicht"> <!-- Tages-, Wochen-, Monatsansicht-->
       <button class="aktiv">Tag</button>
       <button>Woche</button>
      <!-- <button>Monat</button> -->
     </nav>
+      <button class="plus-button">+</button>
+    </div>
 
     <header class="kopfzeile">
       <h1 class="wochentag">Mittwoch</h1>
