@@ -1,0 +1,107 @@
+.tagesansicht {
+    display: flex;
+    flex-direction: column;   /* Umschalter, Kopfzeile, Raster untereinander */
+    height: 100vh;            /* genau so hoch wie das Browserfenster */
+}
+
+.ansicht {
+    display: flex;
+    width: fit-content;       /* nur so breit wie die 3 Buttons */
+    margin: 12px auto;        /* "auto" links/rechts = zentriert */
+    padding: 2px;
+    background: #ffffff;      /* grauer Hintergrund */
+    border-radius: 8px;
+}
+
+.ansicht button {
+    padding: 6px 24px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;  /* nicht aktive Buttons: durchsichtig */
+    font-size: 14px;
+    cursor: pointer;          /* Hand-Zeiger beim Drüberfahren */
+}
+
+.ansicht button.aktiv {
+    background: rgb(252 220 230);
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgb(255 255 255);  /* leichter Schatten */
+}
+
+.kopfzeile {
+    padding: 8px 20px 12px;
+    border-bottom: 1px solid var(--linie);
+}
+
+.wochentag {
+    margin: 0;                /* Browser-Standardabstand entfernen */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.datum {
+    margin: 4px 0 0;
+    color: var(--text-grau);
+}
+
+.scrollbereich {
+    flex: 1;                  /* nimmt den restlichen Platz nach unten ein */
+    overflow-y: auto;         /* hier wird gescrollt */
+}
+
+.raster {
+    display: flex;            /* Zeitspalte und Tagesspalte nebeneinander */
+}
+
+.zeitspalte {
+    width: 60px;
+    flex-shrink: 0;           /* darf nie schmaler werden */
+}
+
+.stunde {
+    height: 60px;             /* 1 Stunde = 60px */
+    padding-right: 8px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-grau);
+}
+
+.tagesspalte {
+    flex: 1;                  /* restliche Breite */
+    position: relative;       /* Bezugspunkt für .termin */
+    border-left: 1px solid var(--linie);
+}
+
+.stundenzeile {
+    height: 60px;             /* gleiche Höhe wie .stunde! */
+    border-top: 1px solid var(--linie);
+    box-sizing: border-box;   /* Linie zählt zur Höhe dazu, sonst verrutscht alles */
+}
+
+.termin {
+    position: absolute;       /* liegt über den Linien */
+    left: 4px;
+    right: 4px;
+    top: 585px;               /* 9:45 Uhr  = 9,75 Std × 60px */
+    height: 90px;             /* 1,5 Std   = 1,5 × 60px */
+
+    padding: 4px 8px;
+    box-sizing: border-box;
+    background: #bfecd6;      /* hellgrün */
+    border-left: 3px solid #4aa184;  /* kräftiger grüner Streifen */
+    border-radius: 6px;
+    overflow: hidden;         /* Text, der nicht passt, wird abgeschnitten */
+}
+
+.termin-titel {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4aa184;
+}
+
+.termin-info {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #4aa184;
+}

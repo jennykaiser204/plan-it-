@@ -1,4 +1,12 @@
 <script setup>
+import DayView from './components/DayView.vue'
+</script>
+
+<template>
+  <DayView />
+</template>
+
+<!-- <script setup>
 import EventList from './components/EventList.vue'
 </script>
 
@@ -8,3 +16,4 @@ import EventList from './components/EventList.vue'
     <EventList />
   </main>
 </template>
+-->

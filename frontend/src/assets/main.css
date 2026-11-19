@@ -1,0 +1,14 @@
+/* assets/main.css */
+:root {
+    --text: #1d1d1f;
+    --text-grau: #86868b;
+    --linie: #ffffff;
+    --hintergrund: #fcdce6;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    background: var(--hintergrund);
+}
